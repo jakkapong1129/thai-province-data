@@ -31,18 +31,17 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: "pip"
 
       - name: Run validator (capture output)
         id: validate
         shell: bash
         run: |
           set -o pipefail
-          # รัน validator + เก็บ stdout/stderr ไว้ที่ไฟล์
-          python3 scripts/0_validate_data.py --strict --fail-on-warn \
-            > validation_output.txt 2>&1 || echo "EXIT_CODE=$?" >> ${GITHUB_OUTPUT}
+          touch validation_output.txt
 
-          # กำหนด exit code ถ้าไม่ว่าง (มี error) ใช้ค่าที่จับไว้
+          python3 scripts/0_validate_data.py --strict --fail-on-warn \
+            2>&1 | tee validation_output.txt || echo "EXIT_CODE=$?" >> ${GITHUB_OUTPUT}
+
           if grep -q '^EXIT_CODE=' ${GITHUB_OUTPUT}; then
             exit 1
           fi
@@ -62,7 +61,6 @@ jobs:
             const fs = require('fs');
             let body = fs.readFileSync('validation_output.txt', 'utf8');
 
-            // ตัดความยาวคอมเมนต์ไม่ให้ยาวเกิน (กันโดนตัด)
             const MAX = 5000;
             let truncated = false;
             if (body.length > MAX) {
@@ -72,10 +70,9 @@ jobs:
 
             const prNumber = context.payload.pull_request.number;
             const header = [
-              "❌ **Validation failed**",
+              "? **Validation failed**",
               "",
               "**Summary**: The validator detected errors/warnings in the dataset.",
-              "Please review the details below and fix them. See CONTRIBUTING for guidance.",
               "",
               "```text",
             ].join("\n");
@@ -83,7 +80,7 @@ jobs:
               "```",
               "",
               truncated ? "_Note: output truncated in comment; see uploaded artifact for full logs._" : "",
-              "Helpful doc: [CONTRIBUTING.md](https://github.com/kongvut/thai-province-data/blob/master/CONTRIBUTING.md)"
+              "Helpful doc: CONTRIBUTING.md"
             ].join("\n");
 
             const comment = header + body + "\n" + footer;
