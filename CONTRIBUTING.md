@@ -70,19 +70,30 @@
 เวลาเปิด PR กรุณาระบุรายละเอียด เช่น:
 
 ```markdown
+## Pull Request: เพิ่มอำเภอใหม่ "กัลยาณิวัฒนา"  
+Closes #29
+
 ### Summary
-แก้ไขชื่ออำเภอ "เมืองขอนแก่น" ในไฟล์ districts.json และ districts.csv
+เพิ่มอำเภอใหม่ **กัลยาณิวัฒนา** พร้อมอัปเดตข้อมูลตำบลที่ถูกย้ายจากอำเภอแม่แจ่มไปยังอำเภอใหม่
+
+**ตำบลที่ถูกย้าย**
+- บ้านจันทร์: จาก แม่แจ่ม (500306) → กัลยาณิวัฒนา (502501)  
+- แม่แดด: จาก แม่แจ่ม (500309) → กัลยาณิวัฒนา (502502)  
+- แจ่มหลวง: จาก แม่แจ่ม (500310) → กัลยาณิวัฒนา (502503)
 
 ### Changes
-- data/raw/districts.json
-- formats/csv/districts.csv
+- `data/raw/districts.json`
+- `data/raw/sub_districts.json`
 
 ### Reference
-ข้อมูลจากกรมการปกครอง: https://www.dopa.go.th/
+- https://th.wikipedia.org/wiki/อำเภอกัลยาณิวัฒนา
 
 ### Impact
-ไม่มีผลกระทบต่อ schema หรือ API JSON
+- มีผลกระทบต่อ API JSON
+- กระทบกับ Data format ที่อิงรหัสอำเภอและตำบล
 ```
+
+ตัวอย่าง: [PR #34](https://github.com/kongvut/thai-province-data/pull/34)
 
 ---
 
