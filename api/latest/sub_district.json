@@ -52476,6 +52476,42 @@
     "deleted_at": null
   },
   {
+    "id": 502501,
+    "zip_code": 58130,
+    "name_th": "บ้านจันทร์",
+    "name_en": "Ban Chan",
+    "district_id": 5025,
+    "lat": 19.0825,
+    "long": 98.3196,
+    "created_at": "2025-11-15T14:48:00.000+07:00",
+    "updated_at": "2025-11-15T14:48:00.000+07:00",
+    "deleted_at": null
+  },
+  {
+    "id": 502502,
+    "zip_code": 50250,
+    "name_th": "แม่แดด",
+    "name_en": "Mae Daet",
+    "district_id": 5025,
+    "lat": 18.9382,
+    "long": 98.3922,
+    "created_at": "2025-11-15T14:48:00.000+07:00",
+    "updated_at": "2025-11-15T14:48:00.000+07:00",
+    "deleted_at": null
+  },
+  {
+    "id": 502503,
+    "zip_code": 58130,
+    "name_th": "แจ่มหลวง",
+    "name_en": "Chaem Luang",
+    "district_id": 5025,
+    "lat": 18.991,
+    "long": 98.2174,
+    "created_at": "2025-11-15T14:48:00.000+07:00",
+    "updated_at": "2025-11-15T14:48:00.000+07:00",
+    "deleted_at": null
+  },
+  {
     "id": 510101,
     "zip_code": 51000,
     "name_th": "ในเมือง",

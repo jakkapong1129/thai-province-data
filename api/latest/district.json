@@ -4887,6 +4887,15 @@
     "deleted_at": null
   },
   {
+    "id": 5025,
+    "name_th": "กัลยาณิวัฒนา",
+    "name_en": "Galyani Vadhana",
+    "province_id": 38,
+    "created_at": "2025-11-15T14:48:00.000+07:00",
+    "updated_at": "2025-11-15T14:48:00.000+07:00",
+    "deleted_at": null
+  },
+  {
     "id": 5101,
     "name_th": "เมืองลำพูน",
     "name_en": "Mueang Lamphun",
