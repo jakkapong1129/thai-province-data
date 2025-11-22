@@ -110,7 +110,7 @@ curl -s https://raw.githubusercontent.com/kongvut/thai-province-data/refs/heads/
 
 ## Fetch data demo by React
 
-ตัวอย่างการใช้งาน API [province_with_district_and_sub_district.json](https://raw.githubusercontent.com/kongvut/thai-province-data/refs/heads/master/api/latest/province_with_district_and_sub_district.json) เพื่อสร้าง DropdownList
+ตัวอย่างการใช้งาน API `api/latest/province_with_district_and_sub_district.json` เพื่อสร้าง DropdownList
 
 > https://codesandbox.io/p/sandbox/thailand-province-demo-api-k3st7
 
