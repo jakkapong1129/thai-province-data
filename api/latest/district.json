@@ -1558,7 +1558,7 @@
   },
   {
     "id": 2408,
-    "name_th": "สนามชัยเขต",
+    "name_th": "สนามชัย",
     "name_en": "Sanam Chai Khet",
     "province_id": 15,
     "created_at": "2019-08-09T03:33:09.000+07:00",
@@ -2253,15 +2253,6 @@
     "id": 3122,
     "name_th": "แคนดง",
     "name_en": "Khaen Dong",
-    "province_id": 20,
-    "created_at": "2019-08-09T03:33:09.000+07:00",
-    "updated_at": "2025-09-20T06:31:26.000+07:00",
-    "deleted_at": null
-  },
-  {
-    "id": 3123,
-    "name_th": "เฉลิมพระเกียรติ",
-    "name_en": "Chaloem Phra Kiat",
     "province_id": 20,
     "created_at": "2019-08-09T03:33:09.000+07:00",
     "updated_at": "2025-09-20T06:31:26.000+07:00",
@@ -5364,15 +5355,6 @@
     "deleted_at": null
   },
   {
-    "id": 5515,
-    "name_th": "เฉลิมพระเกียรติ",
-    "name_en": "Chaloem Phra Kiat",
-    "province_id": 43,
-    "created_at": "2019-08-09T03:33:09.000+07:00",
-    "updated_at": "2025-09-20T06:31:26.000+07:00",
-    "deleted_at": null
-  },
-  {
     "id": 5601,
     "name_th": "เมืองพะเยา",
     "name_en": "Mueang Phayao",
@@ -6525,15 +6507,6 @@
     "deleted_at": null
   },
   {
-    "id": 7074,
-    "name_th": "ท้องถิ่นเทศบาลตำบลบ้านฆ้อง",
-    "name_en": "Tet Saban Ban Kong",
-    "province_id": 55,
-    "created_at": "2019-08-09T03:33:09.000+07:00",
-    "updated_at": "2025-09-20T06:31:26.000+07:00",
-    "deleted_at": null
-  },
-  {
     "id": 7101,
     "name_th": "เมืองกาญจนบุรี",
     "name_en": "Mueang Kanchanaburi",
@@ -7200,15 +7173,6 @@
     "deleted_at": null
   },
   {
-    "id": 8023,
-    "name_th": "เฉลิมพระเกียรติ",
-    "name_en": "Chaloem Phra Kiat",
-    "province_id": 63,
-    "created_at": "2019-08-09T03:33:09.000+07:00",
-    "updated_at": "2025-09-20T06:31:26.000+07:00",
-    "deleted_at": null
-  },
-  {
     "id": 8101,
     "name_th": "เมืองกระบี่",
     "name_en": "Mueang Krabi",
@@ -7812,15 +7776,6 @@
     "deleted_at": null
   },
   {
-    "id": 9077,
-    "name_th": "ท้องถิ่นเทศบาลตำบลสำนักขาม",
-    "name_en": "Sum Nung Kam",
-    "province_id": 70,
-    "created_at": "2019-08-09T03:33:09.000+07:00",
-    "updated_at": "2025-09-20T06:31:26.000+07:00",
-    "deleted_at": null
-  },
-  {
     "id": 9101,
     "name_th": "เมืองสตูล",
     "name_en": "Mueang Satun",
@@ -8335,7 +8290,7 @@
   },
   {
     "id": 9610,
-    "name_th": "สุไหงโก-ลก",
+    "name_th": "สุไหงโกลก",
     "name_en": "Su-ngai Kolok",
     "province_id": 76,
     "created_at": "2019-08-09T03:33:09.000+07:00",
